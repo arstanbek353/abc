@@ -1,0 +1,104 @@
+.main-banner {
+  position: relative;
+  .swiper-slide {
+    background-color: #f8f8f8;
+    background-image: url(../images/dist/banner-bg.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top -12.8rem;
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 7rem;
+  }
+  &__left {
+    width: 65rem;
+  }
+  &__title {
+    font-size: 5.6rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 2.5rem;
+  }
+  &__text {
+    font-size: 1.8rem;
+    margin-bottom: 5rem;
+  }
+  &__img {
+    width: 84.2rem;
+  }
+  &__controllers {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 50;
+    padding-bottom: 3rem;
+    .container {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__pag {
+    margin-right: 7rem;
+    width: auto;
+    color: rgba($color: #16166C, $alpha: 0.6);
+    font-weight: 500;
+    font-size: 1.8rem;
+    .swiper-pagination-current {
+      color: #16166C;
+      font-size: 3rem;
+    }
+  }
+  &__prev,
+  &__next {
+    margin-right: 1.7rem;
+    width: 6rem;
+    @include hover-slider-btn;
+  }
+  @media (max-width: 48em) {
+    position: relative;
+    .swiper-slide {
+      background-size: auto 100%;
+      background-position: center top -12.8rem;
+    }
+    &__inner {
+      padding-top: 11.6rem;
+      display: block;
+      padding-bottom: 7rem;
+    }
+    &__left {
+      width: 100%;
+    }
+    &__title {
+      font-size: 2.8rem;
+      margin-bottom: 1.4rem;
+    }
+    &__text {
+      font-size: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+    &__img {
+      width: calc(100% + 3rem);
+      position: relative;
+      left: -1.5rem;
+    }
+    &__controllers {
+      padding-bottom: 2.7rem;
+      .container {
+        justify-content: space-between;
+      }
+    }
+    &__pag {
+      margin-right: 0;
+    }
+    &__prev,
+    &__next {
+      margin-right: 0;
+      margin-left: 1rem;
+      width: 5.2rem;
+    }
+  }
+}

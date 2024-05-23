@@ -1,0 +1,90 @@
+.footer {
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10rem;
+  }
+  &__col:not(:first-child) {
+    padding-top: 3rem;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4.4rem;
+  }
+  &__logo-img {
+    width: 11.1rem;
+    margin-right: 1rem;
+  }
+  &__logo-text {
+    font-size: 2.6rem;
+    font-weight: 600;
+  }
+  &__cop {
+    font-size: 1.6rem;
+    color: #888;
+    font-weight: 500;
+  }
+  &__text {
+    color: #595959;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  &__cont {
+    margin-bottom: 2.6rem;
+  }
+  &__lab {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    transition: color 300ms;
+    &:hover {
+      color: $accent;
+    }
+  }
+  &__val {
+    font-size: 1.8rem;
+    color: #A0A0A0;
+    font-weight: 500;
+  }
+  @media (max-width: 48em) {
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+    &__inner {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 3rem;
+    }
+    &__col:not(:first-child) {
+      padding-top: 0;
+    }
+    &__logo {
+      margin-bottom: 0;
+    }
+    &__logo-img {
+      width: 8rem;
+      margin-right: 1rem;
+    }
+    &__logo-text {
+      font-size: 2rem;
+    }
+    &__cop {
+      font-size: 1.4rem;
+      margin-top: 5rem;
+    }
+    &__text {
+      font-size: 1.4rem;
+    }
+    &__cont {
+      margin-bottom: 1rem;
+    }
+    &__lab {
+      font-size: 1.8rem;
+    }
+    &__val {
+      font-size: 1.3rem;
+    }
+  }
+}

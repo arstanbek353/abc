@@ -1,0 +1,75 @@
+// GENERAL PROJECT STYLES
+
+
+.only-pc {
+  display: block;
+  @media (max-width: 48em) {
+    display: none;
+  }
+}
+.only-sp {
+  display: none;
+  @media (max-width: 48em) {
+    display: block;
+  }
+}
+
+.btn {
+  color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  padding: 2rem 4rem;
+  background-color: $accent;
+  border-radius: 3.6rem;
+  transition: opacity 200ms;
+  min-height: 6rem;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+  @media (max-width: 48em) {
+    font-size: 1.5rem;
+    min-height: 5rem;
+    padding: 1rem 3rem;
+  }
+}
+
+.btn-wrap {
+  display: inline-flex;
+  align-items: center;
+  img {
+    width: 6rem;
+    height: 6rem;
+    transition: transform 300ms;
+  }
+  &:hover {
+    img {
+      transform: translateX(1rem);
+    }
+  }
+  @media (max-width: 48em) {
+    img {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
